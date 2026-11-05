@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charity Fashion Tips</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{background:linear-gradient(135deg,#ffafbd,#ffc3a0);font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;padding:20px}
+            .card{background:white;max-width:400px;width:100%;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.15);text-align:center}
+            h1{color:#ff4b7a}
+            .tag{background:#ffe1e9;color:#ff4b7a;padding:5px 12px;border-radius:20px;font-size:12px}
+            #tip{font-size:18px;color:#333;margin:30px 0;min-height:60px}
+            button{background:#ff4b7a;color:white;border:none;padding:14px 28px;border-radius:30px;font-size:16px;font-weight:bold}
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <span class="tag">CharitexFashionHub</span>
+            <h1>Daily Fashion Tip</h1>
+            <p id="tip"></p>
+            <button onclick="newTip()">New Tip</button>
+        </div>
+        <script>
+            const tips=[
+            "Fit is more important than brand.",
+            "A white shirt goes with everything.",
+            "Less is more - let one accessory shine.",
+            "Invest in good shoes.",
+            "Black never goes out of style.",
+            "Confidence is the best outfit.",
+            "Iron your clothes - neatness is luxury.",
+            "A little black dress saves any plan.",
+            "Mix textures, not just colors.",
+            "Tailor your clothes - cheap looks expensive when tailored.",
+            "Don't wear more than 3 colors at once.",
+            "Scarves transform boring outfits.",
+            "Quality over quantity.",
+            "Your handbag should match your shoes.",
+            "Always dress for the occasion."
+            ];
+            function newTip(){
+                const r=tips[Math.floor(Math.random()*tips.length)];
+                document.getElementById("tip").innerText=r;
+            }
+            newTip();
+        </script>
+    </body>
+    </html>
+    
+            }
